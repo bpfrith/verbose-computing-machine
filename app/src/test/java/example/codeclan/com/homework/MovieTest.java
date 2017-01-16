@@ -32,4 +32,28 @@ public class MovieTest {
         assertEquals(10, movie.getRank());
     }
 
+    @Test
+    public void canSetTitle(){
+        movie.setTitle("Lion King");
+        assertEquals("Lion King", movie.getTitle());
+    }
+
+    @Test
+    public void canSetGenre(){
+        movie.setGenre("Kids");
+        assertEquals("Kids", movie.getGenre());
+    }
+
+    @Test
+    public void canSetRank(){
+        movie.setRank(9);
+        assertEquals(9, movie.getRank());
+    }
+
+    @Test
+    public void canToString(){
+        String string = movie.toString(movie);
+        assertEquals("Title: 'Jungle Book', Genre: 'Kids', Ranking: 10", string);
+    }
+
 }

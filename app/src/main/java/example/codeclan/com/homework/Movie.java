@@ -27,4 +27,20 @@ public class Movie implements Filmable{
         return this.ranking;
     }
 
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
+    public void setGenre(String genre) {
+        this.genre = genre;
+    }
+
+    public void setRank(int ranking) {
+        this.ranking = ranking;
+    }
+
+    public String toString(Movie movie) {
+        return "Title: '" + this.title + "', Genre: '" + this.genre + "', Ranking: " + this.ranking;
+    }
+
 }
